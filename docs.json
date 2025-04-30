@@ -10,27 +10,25 @@
   "favicon": "/logo.png",
   "navigation": {
     "tabs": [
+            {
+        "tab": "Start",
+        "groups": [
+          {
+            "group": "Übersicht",
+            "pages": [
+              "einleitung"
+            ]
+          }
+        ]
+      }
       {
         "tab": "Turnierplattform",
         "groups": [
           {
             "group": "Übersicht",
             "pages": [
-              "einleitung",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Essentials",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
-            ]
+              "inhaltsverzeichnis"
+                          ]
           }
         ]
       },
