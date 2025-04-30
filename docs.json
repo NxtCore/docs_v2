@@ -1,22 +1,22 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "NxtCore Dokumentation",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
     "dark": "#15803D"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/logo.png",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Turnierplattform",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "Übersicht",
             "pages": [
-              "introduction",
+              "einleitung",
               "quickstart",
               "development"
             ]
@@ -83,14 +83,9 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:developement@nxtcore.app"
       }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
+    ]
   },
   "footer": {
     "socials": {
