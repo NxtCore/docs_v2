@@ -1,13 +1,12 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "maple",
   "name": "NxtCore Dokumentation",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
     "dark": "#15803D"
   },
-  "theme": "maple",
   "favicon": "/logo.png",
   "navigation": {
     "tabs": [
