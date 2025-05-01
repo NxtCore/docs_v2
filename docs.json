@@ -3,9 +3,9 @@
   "theme": "maple",
   "name": "NxtCore Dokumentation",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#E7DB42",
+    "light": "#F4F09E",
+    "dark": "#D4C842"
   },
   "favicon": "/logo.png",
   "navigation": {
@@ -33,7 +33,7 @@
         ]
       },
       {
-        "tab": "API Reference",
+        "tab": "OpenAPI Referenz (Turnierplatform)",
         "groups": [
           {
             "group": "API Documentation",
@@ -55,22 +55,20 @@
     ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/nxc.png",
+    "dark": "/logo/nxc.png"
   },
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:developement@nxtcore.app"
+        "href": "mailto:development@nxtcore.app"
       }
     ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "github": "https://github.com/NxtCore"
     }
   }
 }
