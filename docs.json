@@ -27,8 +27,8 @@
           {
             "group": "Übersicht",
             "pages": [
-              "inhaltsverzeichnis",
-              "benutzeroberflaeche"
+              "nxtcore-inhaltsverzeichnis",
+              "nxtcore-benutzeroberflaeche"
             ]
           }
         ]
