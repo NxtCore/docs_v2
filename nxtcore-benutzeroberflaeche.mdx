@@ -110,19 +110,114 @@ description: "Beschreibung aller Funktionen in der Benutzeroberfläche"
     - E-Mail Adresse
     - Discord Account
     - Riot Games Account
-    - ~~Google Account ~~\
+    - ~~Google Account~~\
       <sup>Aktuell nicht verfügbar</sup>
 
       ![Loginubersicht Pn](/images/loginubersicht.png)
   </Accordion>
-  Nach dem Login ist nachfolgende Ansicht zu sehen:
+  <Accordion title="Zum Benutzerkonto wechseln" description="Benutzerkonto aufrufen" icon="sparkles">
+    Nachdem erfolgreichen einloggen, erscheint ein "Profil" Icon und ein "Logout" Icon.\
+    \
+    Mit einem Klick auf das „Profil“-Icon erscheint das eigene Profil.\
+    <sup>(Siehe Bild)</sup>
 
-  <AccordionGroup>
-    <Accordion title="New Accordion" icon="sparkles">
+    ![Login Logout Button Pn](/images/login-logout-button.png)
+  </Accordion>
+  Nach dem Login und dem Klicken auf das "Profil" Icon können Informationen eingesehen oder Änderungen am Profil vorgenommen werden.\
+  \
+  Nachfolgend werden die Menüpunkte im Bearbeitungsmodus des Benutzerkontos erklärt.\
+  Die hier zusehenden Tabs sind auch im Profil vorhanden.
+
+  <Tabs>
+    <Tab title="Übersicht">
+      **Nachfolgend werden alle Funktionen des Menüpunkts "Übersicht" erklärt.**\
+      Nach dem Klicken auf das "Profilicon" ist nachfolgendes Bild die "Startseite" des Benutzerkontos.
+
+      ![Benutzerkonto Uebersicht Pn](/images/benutzerkonto-uebersicht.png)
+
+      **<u>Erklärung der Funktionen:</u>**
+
+      - **Avatar:** Über die Schaltfläche "Avatar" kann ein Benutzerbild hochgeladen werden.\
+        Bildformat: 1:1
+
+        ![Benutzerkonto Avatar Pn](/images/benutzerkonto-avatar.png)
+      - **Banner:** Über die Schaltfläche "Banner" kann ein Hintergrundbanner für das eigene Benutzerprofil hochgeladen werden.\
+        Bildformat: 16:9
+
+        ![Benutzerkonto Banner Pn](/images/benutzerkonto-banner.png)
+      - **Username:** Über die Schaltfläche "Username" kann der Benutzernamen / Nickname geändert werden.
+
+        ![Benutzerkonto Username Pn](/images/benutzerkonto-username.png)
+      - **Slug:** Der Slug kann nicht selbst bearbeitet werden. \
+        Der Slug ist ein benutzerfreundlicher, eindeutiger Identifikator, der als Alternative zu einer numerischen ID für eine Ressource verwendet wird.\
+        Er dient in diesem Fall dazu, das Benutzerkonto klar und eindeutig zu kennzeichnen.
+
+        ![Benutzerkonto Slug Pn](/images/benutzerkonto-slug.png)
+      - \*\*Mail: \*\*Über die Schaltfläche "Mail" kann die E-Mailadresse bearbeitet oder die Verifizierungsmail erneut versendet werden.\
+        So ist das ändern oder korrigieren der E-Mailadresse möglich.\
+        Aber auch das erneute versenden einer Verifizierungsmail, sollte diese im Postfach nicht angekommen sein. **Bitte auch in den Spam-Ordner schauen.**
+
+        ![Benutzerkonto Email Pn](/images/benutzerkonto-email.png)
+      - \*\*Speichern: \*\*Alle Änderungen müssen über das Klicken auf die Schaltfläche "Speichern" bestätigt werden.
+
+        ![Benutzerkonto Aenderungspeichern Pn](/images/benutzerkonto-aenderungspeichern.png)
+    </Tab>
+    <Tab title="Verbindungen">
+      **Über den Menüpunkt "Verbindungen" können diverse Accounts mit dem Benutzerkonto verknüpft werden.**\
+      \
+      Je nach Usecase kann dort nur eine Verbindung oder auch mehrere Verknüpfungen möglich sein.\
+      \
+      In unserem Beispiel sind es zwei mögliche Verknüpfungen.\
+      Discord und Roit Games
+
+      - Es wird auf der linken Seite der Verknüpfung immer angezeigt, um welche Verknüpfung zu welchem Account es sich handelt. Zusätzlich wird der Username, welcher auf der jewiligen Plattform genutzt wird, angezeigt.\
+        <sup>(Im Bild grün gekennzeichnet)</sup>
+      - Auf der rechten Seite der Verknüpfung, gibt es die Möglichkeit die Verknüpfung aus dem Profil über die Schaltfläche "Entfernen" zu entfernen / zu löschen.\
+        Die Verknüpfung kann jederzeit wiederholt werden.\
+        <sup>(Im Bild rot gekennzeichnet)</sup>
+      - Es gibt auf der rechten Seite zudem die Möglichkeit zu wählen, ob die Verknüpfung im eigenen Profil angezeigt werden soll. Andere User können somit z.B. die Riot Games ID einsehen und bei anstehenden Turnieren schneller eine Einladung versenden.\
+        <sup>(Im Bild orange gekennzeichnet)</sup>
+
+        ![Verbindungen Bearbeiten Pn](/images/verbindungen-bearbeiten.png)
+    </Tab>
+    <Tab title="Teams">
+      **Über die Schaltfläche "Teams" können alle Teameinstellungen getätigt werden.**\
+      Es kann sowohl nach einem Team gesucht und beigetreten, ein Team erstellt oder ein bereits vorhandenes Team bearbeitet werden. \
+      <sup>(Für die Bearbeitung werden entsprechende Rechte im Team benötigt.)  </sup>\
+      \
+      **Hier eine Übersicht der Schaltflächen, auf welche in der Erklärung Bezug genommen wird:**
+
+      <img
+        src="/images/teams-uebersicht.png"
+        alt="Teams Uebersicht Pn"
+        title="Teams Uebersicht Pn"
+        style={{ width:"100%" }}
+      />
+
+      <AccordionGroup>
+        <Accordion title="Suchen" description='Erklärung der Schaltfläche "Suchen"' icon="sparkles">
+          Nachfolgend werden die einzelnen Funktionen auf der "Suchen"-Seite erklärt.
+
+          <Accordion title="Team-Suche" description="Erklärung, wie ein Team gesucht werde kann." icon="sparkles">
+            **Mit dem Klick auf die Schaltfläche "Suchen" öffnet sich die Teamsuche.**\
+            Es gibt mehrere Möglichkeiten ein Team zu finden.
+
+            - **<u>Team über die "Suche"-Leiste suchen:</u>**\
+              Hier kann ein Teil des Namen oder der Name als Ganzes eingegeben werden.\
+              Sobald eine Eingabe erfolgt ist, aktuallisiert sich die Liste innerhalb von wenigen Sekunden. **Die Eingabe muss NICHT mit Enter bestätigt werden\!**
+            - **<u>Team durch das Scrollen in der Liste suchen:</u>**\
+              Die Teamliste lässt sich auch durch Scrollen mit dem Mausrad nach oben oder unten durchsuchen.
+
+              ![Teamsuche Gi](/images/teamsuche.gif)
+          </Accordion>
+        </Accordion>
+        <Accordion title="New Accordion" icon="sparkles">
+          
+        </Accordion>
+      </AccordionGroup>
+    </Tab>
+    <Tab title="Einladungen">
       
-    </Accordion>
-    <Accordion title="New Accordion" icon="sparkles">
-      
-    </Accordion>
-  </AccordionGroup>
+    </Tab>
+  </Tabs>
 </Accordion>
