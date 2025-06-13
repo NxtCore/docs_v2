@@ -195,10 +195,12 @@ description: "Beschreibung aller Funktionen in der Benutzeroberfläche"
       />
 
       <AccordionGroup>
-        <Accordion title="Suchen" description='Erklärung der Schaltfläche "Suchen"' icon="sparkles">
-          Nachfolgend werden die einzelnen Funktionen auf der "Suchen"-Seite erklärt.
+        <Accordion title="Suchen" description='Erklärung der Schaltfläche "Suchen"' icon="magnifying-glass">
+          Nachfolgend werden die einzelnen Funktionen auf der "Suchen"-Seite erklärt.\
+          \
+          Hier ist auch beschrieben, wie einem Team begetreten werden kann.
 
-          <Accordion title="Team-Suche" description="Erklärung, wie ein Team gesucht werde kann." icon="sparkles">
+          <Accordion title="Team-Suche" description="Erklärung, wie ein Team gesucht werden kann." icon="magnifying-glass">
             **Mit dem Klick auf die Schaltfläche "Suchen" öffnet sich die Teamsuche.**\
             Es gibt mehrere Möglichkeiten ein Team zu finden.
 
@@ -208,16 +210,130 @@ description: "Beschreibung aller Funktionen in der Benutzeroberfläche"
             - **<u>Team durch das Scrollen in der Liste suchen:</u>**\
               Die Teamliste lässt sich auch durch Scrollen mit dem Mausrad nach oben oder unten durchsuchen.
 
-              ![Teamsuche Gi](/images/teamsuche.gif)
+              <img
+                src="/images/teamsuche.gif"
+                alt="Teamsuche Gi"
+                style={{ width:"100%" }}
+                hallo={true}
+              />
           </Accordion>
+          <Accordion title="Team Beitreten / Beitrittsanfrage stellen" description="Erklärung, wie du einem Team beitrittst oder eine Beitrittsanfrage stellst." icon="circle-plus">
+            In der Teamsuche gibt es neben dem Teamnamen auf der rechten Seite eine Schaltfläche mit **" Beitreten"** oder **" Beitrittsanfrage"**
+
+            ![image.png](/images/image.png)
+
+            Ist die Schaltfläche\*\*"\*\* <Icon icon="circle-plus" color="#ffffff" />\*\*Beitreten" \*\* zu sehen, so kann dem Team, ohne vorherige Beitrittsanfrage, beigetreten werden.
+
+            Ist die Schaltfläche "<Icon icon="circle-plus" color="#ffffff" /> Beitrittsanfrage" zu sehen, so muss dem Team, vor Beitritt, eine Anfrage gestellt werden. Die im Team berechtigten User, können die Anfrage einsehen und den Beitritt annehmen oder ablehnen.\
+            \
+            Offene Beitrittsanfragen sind im Tab **"Einladungen"** aufgeführt und können dort entsprechend verwaltet werden. \
+            \
+            <Icon icon="link" iconType="solid" color="#ffffff" size={18} /> [Hier gehts zum Tab "Einladungen"](https://docs-dev.nxtcore.app/nxtcore-benutzeroberflaeche#einladungen)
+          </Accordion>
+          Über die Schaltfläche \*\*"<Icon icon="magnifying-glass" color="#ffffff" /> Suche Abbrechen" \*\*geht es zurück zur "Teams" Übersicht.
         </Accordion>
-        <Accordion title="New Accordion" icon="sparkles">
-          
+        <Accordion title="Erstellen" description='Erklärung der Schaltfläche "Erstellen"' icon="circle-plus">
+          Über die Schaltfläche "Erstellen" kann ein Team erstellt werden.\
+          Mit dem Klicken auf die Schaltfläche öffnet sich ein Pop-Up Fenster.\
+          \
+          In diesem Muss der Teamname eingetragen werden.\
+          Anschließend mit dem Klicken auf die Schaltfläche "Erstellen" bestätigen.
+
+          ![Erstellenpopup Pn](/erstellenpopup.png)
+
+          Das Team ist direkt im Anschluss erstellt.\
+          \
+          In der Mitte der Seite ist nun das Team mit dem gewählten Namen zu finden.\
+          Es wird zudem die Anzahl der, sich im Team befindlichen Mitglieder, angezeigt.
+
+          ![Erstelltuebersicht Pn](/images/erstelltuebersicht.png)
+        </Accordion>
+        <Accordion title="Bearbeiten" description='Erklärung der Schaltfläche "Bearbeiten"' icon="pencil">
+          Über die Schaltfläche \*\*"<Icon icon="pencil" color="#ffffff" /> Bearbeiten" \*\*kann das Team bearbeitet werden.\
+          \
+          Nachfolgend werden die Menüpunkte im Bearbeitungsmodus des "Teams" erklärt.\
+          Die hier zusehenden Tabs sind auch im Profil vorhanden.
+
+          <Tabs>
+            <Tab title="Übersicht">
+              Nachfolgend werden alle Funktionen der Reihe nach erklärt.\
+              Hierbei wird immer die Bezeichnung der Funktion zur Benennung verwendet.
+
+              <AccordionGroup>
+                <Accordion title="Avatar" description='Erklärung der Schaltfläche "Avatar".' icon="draw-square">
+                  Das Avatar ist das "Logo" des Teams.\
+                  \
+                  Ist noch kein "Logo" hochgeladen, kann ein Logo über das Klicken auf die Schaltfläche "Hochladen" hochgeladen werden.
+
+                  ![Avatarohnelogo Pn](/images/avatarohnelogo.png)
+
+                  Wurde bereits ein Logo hochgeladen und dieses soll geändert werden, kann das neue Logo über das Klicken auf die Schaltfläche mit dem Logo hochgeladen werden.
+
+                  ![Avatarmitlogo Pn](/images/avatarmitlogo.png)
+
+                  Logo-Änderungen sind jederzeit und beliebig oft möglich.\
+                  Das Löschen des Logos kann nur durch einen Admin erfolgen.\
+                  \
+                  **Format: 1:1**
+                </Accordion>
+                <Accordion title="Banner" description='Erklärung der Schaltfläche "Banner".' icon="bandage">
+                  Der Banner ist der Hintergrund des Teamprofils.\
+                  \
+                  Ist noch kein "Banner" hochgeladen, kann ein Banner über das Klicken auf die Schaltfläche "Hochladen" hochgeladen werden.
+
+                  ![Bannerohne Pn](/images/bannerohne.png)
+
+                  Wurde bereits ein Banner hochgeladen und dieser soll geändert werden, kann der neue Banner über das Klicken auf die Schaltfläche mit dem bereits hochgeladenen Banner, hochgeladen werden.
+
+                  ![Bannermit Pn](/images/bannermit.png)
+
+                  Banner-Änderungen sind jederzeit und beliebig oft möglich.\
+                  Das Löschen des Banners kann nur durch einen Admin erfolgen.\
+                  \
+                  **Format: 16:9**
+                </Accordion>
+                <Accordion title="Teamname" description='Erklärung des Eingabefelds "Teamname".' icon="user-hair">
+                  Über das Eingabefeld "Teamname" kann der Teamname verändert werden.\
+                  \
+                  Nach der Eingabe des neuen Namen mit Klicken auf die Schaltfläche "Speichern" bestätigen. (Im Bild gelb hervorgehoben)
+
+                  ![Speichern Pn](/images/speichern.png)
+                </Accordion>
+                <Accordion title="Slug" description='Erklärung des Eingabefelds "Slug".' icon="user-hair">
+                  Der Slug kann nicht selbst bearbeitet werden.
+
+                  Der Slug ist ein benutzerfreundlicher, eindeutiger Identifikator, der als Alternative zu einer numerischen ID für eine Ressource verwendet wird.\\
+
+                  Er dient in diesem Fall dazu, das Benutzerkonto klar und eindeutig zu kennzeichnen.
+                </Accordion>
+                <Accordion title="Beitritt ohne Anfrage erlaubt?" description='Erklärung der Schaltfläche "Beitritt ohne Anfrage erlaubt?' icon="circle-check">
+                  Über die Schaltfläche **"Beitritt ohne Anfrage erlaubt?"** kann ein Team einstellen, ob Interessenten für das Team dem Team direkt beitreten können oder ob diese zuerst eine Anfrage an das Team stellen müssen.\
+                  \
+                  Hierbei steht das <Icon icon="circle-xmark" color="#ffffff" /> für "Nein" und das <Icon icon="circle-check" color="#ffffff" /> für "Ja"\
+                  \
+                  Ist das <Icon icon="circle-xmark" color="#ffffff" /> für "Nein" ausgewählt, können Interessenten dem Team nicht beitreten, ohne vorher eine Anfrage an das Team gestellt zu haben.\
+                  Das Team muss die Anfrage zuerst annehmen.\
+                  \
+                  Ist das <Icon icon="circle-check" color="#ffffff" /> für "Ja" ausgewählt, können Interessenten dem Team, ohne vorherige Anfrage, beitreten.\
+                  \
+                  Nach der Eingabe des neuen Namen mit Klicken auf die Schaltfläche "Speichern" bestätigen. (Im Bild gelb hervorgehoben)
+
+                  ![Speichernbeitritt Pn](/images/speichernbeitritt.png)
+                </Accordion>
+              </AccordionGroup>
+            </Tab>
+            <Tab title="Mitglieder">
+              
+            </Tab>
+            <Tab title="Einladungen">
+              
+            </Tab>
+          </Tabs>
         </Accordion>
       </AccordionGroup>
     </Tab>
     <Tab title="Einladungen">
-      
+      dfsdfsdf
     </Tab>
   </Tabs>
 </Accordion>
