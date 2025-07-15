@@ -29,7 +29,8 @@
             "pages": [
               "nxtcore-WLinhaltsverzeichnis",
               "nxtcore-benutzeroberflaeche",
-              "nxtcore-WLfrontpage"
+              "nxtcore-WLfrontpage",
+              "nxtcore-WLadmin"
               
             ]
           }

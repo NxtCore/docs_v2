@@ -1,5 +1,136 @@
 ---
-title: 'New file'
-description: 'Description of your new file.'
+title: "Admin-Oberfläche"
+description: "Beschreibung aller Funktionen in der Admin-Oberfläche."
 ---
 
+<Accordion title="Dashboard" description='Erklärung "Dashboard"' icon="sparkles">
+  Das Dashboard ist die Startseite der Admin-Oberfläche.\
+  \
+  Aktuell beinhaltet dieses Dashboard noch keine Informationen.
+</Accordion>
+
+<Accordion title="Accounts" description='Beschreibung aller Funktionen in der Rubrik "Accounts".' icon="sparkles">
+  **Die Funktionen sind in die jeweiligen Menüs unterteilt.**
+
+  <AccordionGroup>
+    <Accordion title="Avatar Dekorationen" description="Beschreibung aller Funktionen in diesem Menü." icon="image">
+      In diesem Menü können Avatardekorationen angelegt werden.
+    </Accordion>
+    <Accordion title="Badges" description="Beschreibung aller Funktionen in diesem Menü." icon="award-simple">
+      Über das Menü "Badges" können Icons oder Bilder hochgeladen werden, welche, nachdem Sie einem User zugewiesen wurden, in dem jeweiligen User-Profil zu sehen sind.\
+      \
+      Beispiel: Baum auf blauem Hintergrund\
+      <sup>(grüner Pfeil markiert das Beispiel)</sup>\
+      \
+      <Icon icon="circle-info" /> Der blaue Hintergrund ist vorhanden, da der Baum selbst keinen eigenen Hintergrund hat.
+
+      ![Badgesbeispiel Pn](/images/badgesbeispiel.png)
+
+      <Accordion title="Badge erstellen" description="Erklärung, wie ein Badge erstellt wird." icon="sparkles">
+        1. Durch das Klicken auf die Schaltfläche "  Erstellen" kann ein neues Badge erstellt werden.
+
+           ![image.png](/images/image.png)
+        2. Eingabe eines Namen für das Badge
+        3. Weiter mit Klicken auf die Schaltfläche "Erstellen"
+
+        ![Badgename Pn](/images/badgename.png)
+      </Accordion>
+      <Accordion title="Badge bearbeiten" description="Erklärung, wie ein bestehendes Badge bearbeitet wird." icon="sparkles">
+        Durch das Klicken auf <Icon icon="paintbrush-pencil" /> öffnet sich die Bearbeitung des jeweiligen Badges.
+
+        ![Bagdeedit Pn](/images/bagdeedit.png)
+
+        \
+        Die Erklärung der Nachfolgenden Funktionen wird in den Tabs fortgeführt.\
+        Diese sind so auch in der Adminoberfläche zu finden:
+
+        <Tabs>
+          <Tab title="Allgemein">
+            Die Erklärung der Schaltflächen in chronologischer Reihenfolge:
+
+            - Name\
+              Hier kann der Name des Badges geändert werden.
+            - Icon\
+              Hier kann das Icon/Bild des Badges vergeben bzw. geändert werden.\
+              \
+              \
+              Übersicht ohne bereits geladenem Icon/Bild\
+              Durch das Klicken auf die Schaltfläche "Bild auswählen" kann ein Bild ausgewählt werden. Es öffnet sich ein Auswahlmenü.
+
+              ![Badgesallgohnebild Pn](/images/badgesallgohnebild.png)
+
+              Übersicht mit bereits geladenem Icon/Bild\
+              Durch das Klicken auf das Icon <Icon icon="trash" color="#ff0505" /> kann das aktuelle Bild gelöscht werden.\
+              <Icon isNewlyCreated="true" />\
+              Im Anschluss der Anleitung "Übersicht ohne bereits geladenem Icon/Bild" folgen.
+
+              ![Badgesallgmitbild Pn](/images/badgesallgmitbild.png)
+          </Tab>
+          <Tab title="User">
+            Über die Schaltfläche "User" kann eingesehen werden, welchen Usern das Badge vergeben wurde. Über das Icon  <Icon icon="eye" /> unter "Aktionen" kann der User in der "Admin-Oberfläche" direkt aufgerufen werden.
+
+            ![Badgesuser Pn](/images/badgesuser.png)
+          </Tab>
+          <Tab title="Teams">
+            Diese Funktion ist aktuell noch nicht verfügbar.
+          </Tab>
+        </Tabs>
+      </Accordion>
+    </Accordion>
+    <Accordion title="Connections" description="Beschreibung aller Funktionen in diesem Menü." icon="code-simple">
+      Über das Menü "Connections" können Verknüpfungen angelegt werden.\
+      User können Ihre Accounts dann entsprechend mit Ihrem Account auf [die-werksliga.de](http://die-werksliga.de) verlinken.\
+      \
+      Das Anlegen dieser Verbindungen ist aktuell (aus Sicherheitsgründen) nur dem Developer-Team von nxtcore möglich.
+
+      ![Connectionsoverview Pn](/images/connectionsoverview.png)
+
+      Für die User sieht diese Übersicht der "Verbindungen" in Ihrem Profil unter \
+      -\> Profil -\> Verbindungen wie folgt aus:
+
+      ![Connectionsfrontpage Pn](/images/connectionsfrontpage.png)
+    </Accordion>
+    <Accordion title="Teams" description="Beschreibung aller Funktionen in diesem Menü." icon="users">
+      Beschreibung aller Funktionen im Menü "Teams".\
+      Da dieses Menü sehr umfangreich ist, sind die Funktionen nochmal kategorisiert.\
+      \
+      Die Startseite, nach dem Klicken auf "Teams" ist in "Übersicht" beschrieben.
+
+      <Accordion title="Übersicht" description='Erklärung der Schaltflächen auf der Übersicht-Seite von "Teams".' icon="sparkles">
+        Über das Menü "Teams" können Teams angelegt, verwaltet und gelöscht werden.\
+        \
+        Zunächst folgt die Erklärung der "Übersicht"
+
+        - Name: \
+          Der Name des Teams\
+          Über das Suchefeld kann ein Team über den Namen in der Liste gesucht werden.
+
+          ![Teamsnamesuche Pn](/images/teamsnamesuche.png)
+        - Slug:\
+          Der Slug ist ein benutzerfreundlicher, eindeutiger Identifikator, der als Alternative zu einer numerischen ID für eine Ressource verwendet wird.\
+          Er dient in diesem Fall dazu, das Benutzerkonto klar und eindeutig zu kennzeichnen.\
+          Über das Suchefeld kann das Team über den Slug in der Liste gesucht werden.
+
+          ![Teamsslugsuche Pn](/images/teamsslugsuche.png)
+        - Erstellt am:\
+          Zeigt das Datum an, wann das Team erstellt wurde.
+
+          ![Teamserstelltam Pn](/images/teamserstelltam.png)
+        - Mitglieder\
+          Zeigt an, wieviele Mitglieder im Team sind.
+
+          ![Teamsmitglieder2 Pn](/images/teamsmitglieder2.png)
+        - 
+      </Accordion>
+    </Accordion>
+    <Accordion title="User" description="Beschreibung aller Funktionen in diesem Menü." icon="user">
+      
+    </Accordion>
+    <Accordion title="User Connection Bans" description="Beschreibung aller Funktionen in diesem Menü." icon="ban">
+      
+    </Accordion>
+    <Accordion title="User Connections" description="Beschreibung aller Funktionen in diesem Menü." icon="code-simple">
+      
+    </Accordion>
+  </AccordionGroup>
+</Accordion>
