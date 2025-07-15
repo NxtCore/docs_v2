@@ -27,8 +27,10 @@
           {
             "group": "Übersicht",
             "pages": [
-              "nxtcore-inhaltsverzeichnis",
+              "nxtcore-WLinhaltsverzeichnis",
               "nxtcore-benutzeroberflaeche"
+              "nxtcore-WLfrontpage"
+              
             ]
           }
         ]
