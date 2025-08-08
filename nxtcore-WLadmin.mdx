@@ -134,3 +134,86 @@ description: "Beschreibung aller Funktionen in der Admin-Oberfläche."
     </Accordion>
   </AccordionGroup>
 </Accordion>
+
+<Accordion title="Berechtigung" description='Beschreibung aller Funktionen in der Rubrik "Admin"' icon="sparkles">
+  **Die Funktionen sind in die jeweiligen Menüs unterteilt.**
+
+  <AccordionGroup>
+    <Accordion title="Berechtigung" description="Beschreibung aller Funktionen in diesem Menü." icon="shield-check">
+      In diesem Menü können User zur Admin-Gruppe hinzugefügt werden.
+
+      <Tabs>
+        <Tab title="Gruppen">
+          In diesem Tab kann über den Button <Icon icon="user-plus" color="#ffffff" /> ein User zur Admin-Gruppe hinzugefügt werden. \
+          \
+          Das Anlegen neuer Benutzer-Gruppen ist aktuell nur durch NxtCore möglich.\
+          \
+          **ACHTUNG: User in der Admin-Gruppe haben vollen Admin Zugriff auf das Backend\!\!\!**
+
+          ![Aktionenadd Pn](/images/Aktionenadd.png)
+
+          Durch das Klicken auf diesen Button, öffnet sich das Popup-Fenster, in dem ein User ausgewählt werden kann, welcher zur Admin-Gruppe hinzugefügt werden soll.\
+          \
+          Suche erfolgt über Dropdown-Menü oder Eingabe.\
+          Es kann auch nur ein Teil des Namens eingegeben werden.
+
+          ![Userzugruppehinzu Pn](/images/Userzugruppehinzu.png)
+
+          Mit einem Klick auf "User hinzufügen" wird die Eingabe bestätigt und der User zur Admin-Gruppe hinzugefügt.\
+          \
+          **ACHTUNG: User in der Admin-Gruppe haben vollen Admin Zugriff auf das Backend\!\!\!**\
+          \
+          Welche User in der Admin-Gruppe sind und somit Adminrecht haben, kann über den Tab "User" eingesehen werden. (hochscrollen und Tab wechseln für Anleitung)
+        </Tab>
+        <Tab title="User">
+          Über den Tab "User" kann eingesehen werden, welche User einer oder mehreren Gruppen (z.B. "Admin") zugewiesen sind.\
+          \
+          Die Reihe "Name" zeigt die Usernamen an.\
+          Die Reihe "Gruppen" zeigt die jeweilige "Benutzer-Gruppe" an.\
+          \
+          Über die in der Reihe "Aktionen" stehenden Schaltflächen gibt es folgende Möglichkeiten:\
+          \
+          Über die Schaltfläche <Icon icon="user-large" color="#ffffff" /> für "Benutzerprofil" öffnet sich das Bearbeitungs-Menü des jeweiligen Benutzers.\
+          \
+          Über die Schaltfläche <Icon icon="paintbrush-pencil" color="#ffffff" /> öffnet sich ein Pop-Up Fenster, in dem die Benutzergruppen des User entfernt oder hinzugefügt werden können.
+
+          ![Admingruppebearbeiten Pn](/images/admingruppebearbeiten.png)
+
+          Durch das Klicken auf das  "x"  kann  eine Benutzer-Gruppe entfernt werden.\
+          Durch das Auswählen im Dropdownmenü und anschließendes Anklicken der "Benutzer-Gruppe" (falls verfügbar) kann eine Benutzer-Gruppe zugewiesen werden.\
+          \
+          Durch das Klicken auf "Berechtigungen bearbeiten" wird die Eingabe gespeichert.
+        </Tab>
+      </Tabs>
+    </Accordion>
+    <Accordion title="Mitglieder Rollen" description="Beschreibung aller Funktionen in diesem Menü." icon="user-clock">
+      Im Menü "Mitglieder Rollen" können Rollen mit bestimmten Berechtigungen angelegt werden.\
+      \
+      Der "Name" zeigt den Namen der jeweiligen Mitglieder-Rolle an.\
+      Üher den Filter kann eine Mitglieder-Rolle durch die Eingabe von einem Namen oder einem Teil des Namen gesucht werden.\
+      \
+      Hier kann einer erstellten Rolle zugewiesen werden, ob diese im Team als
+
+      - Spieler gewertet wird und somit für das "Lineup" angegeben werden kann
+      - Manager-Rechte erhält und das Team bearbeiten und Rollen im Team vergeben kann
+
+      Mit dem "Aktiv" wird definiert, ob die Rolle von einem Manager im Team vergeben werden kann. \
+      \
+      Ist die Rolle auf <Icon icon="circle-check" color="#0bb100" /> so kann die Rolle von einem Manager im Team vergeben werden. \
+      Ist die Rolle auf <Icon icon="circle-xmark" color="#ff0000" /> so kann die Rolle von einem Manager im Team NICHT vergeben werden.\
+      \
+      Es ist zudem zu sehen, wann diese Rolle erstellt wurde.\
+      \
+      Das Erstellen, Bearbeiten und das Löschen der Mitglieder-Rollen ist aktuell nur durch NxtCore möglich.
+    </Accordion>
+    <Accordion title="Übersetzungen" description="Beschreibung aller Funktionen in diesem Menü." icon="language">
+      Im Menü Übersetzungen können Funktionen und Schaltflächen auf der Webseite entsprechend umbenannt werden.\
+      \
+      Um eine Übersetzung anzulegen, benötigt es den genauen Schlüssel auf der Webseite.\
+      Über den "Wert" kann dieser dann entsprechend angepasst werden.\
+      \
+      **Bitte hier unbedingt Rücksprache mit NxtCore halten.**\
+      **Für das Löschen von wichtigen Daten übernehmen wir keine Haftung\!\!\!**
+    </Accordion>
+  </AccordionGroup>
+</Accordion>
