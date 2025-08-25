@@ -124,13 +124,99 @@ description: "Beschreibung aller Funktionen in der Admin-Oberfläche."
       </Accordion>
     </Accordion>
     <Accordion title="User" description="Beschreibung aller Funktionen in diesem Menü." icon="user">
-      
+      Über dieses Menü können Benutzer erstellt, verwaltet und gelöscht werden.\
+      \
+      Über die Schaltfläche <Icon icon="circle-plus" /> Erstellen kann ein neuer Benutzer angelegt werden.
+
+      Über die Schaltfläche <Icon icon="paintbrush-pencil" /> kann ein Benutzerprofil bearbeitet werden.
+
+      <Accordion title="Benutzerprofil bearbeiten" description="Beschreibung aller Funktionen in diesem Menü." icon="sparkles">
+        Die einzelnen Funktionen werden in den jeweiligen Tabs erklärt.\
+        Auf Grund der Menge der Tabs, werden diese aufgeteilt.
+
+        <Tabs>
+          <Tab title="Allgemein">
+            Hier können allgemeine Informationen bearbeitet werden.\
+            \
+            Erklärung der einzelnen Schaltflächen und Eingabefelder in chronologischer Reihenfolge:
+
+            - Username: Hier kann der Username vergeben oder bearbeitet werden
+            - Slug: Der Slug ist ein benutzerfreundlicher, eindeutiger Identifikator, der als Alternative zu einer numerischen ID für eine Ressource verwendet wird.\
+              Er dient in diesem Fall dazu, das Benutzerkonto klar und eindeutig zu kennzeichnen.
+            - E-Mail: Hier kann die E-Mailadresse vergeben oder bearbeitet werden.\
+              Über das Icon <Icon icon="circle-xmark" /> oder <Icon icon="circle-check" /> rechts neben der E-Mailadresse kann eingesehen werden, ob der Benutzeraccount bereits verifiziert ist.
+            - Banner: Hier kann ein Banner hochgeladen werden. \
+              Bildformat: 16:9
+            - Avatar: hier kann ein Avatar hochgeladen werden.\
+              Bildformat: 1:1
+          </Tab>
+          <Tab title="Profil">
+            In diesem Menü können persönliche Daten eingetragen werden.
+          </Tab>
+          <Tab title="Benachrichtigungen">
+            In diesem Menü kann eingesehen werden, ob dem User Benachrichtigungen über das Adminmenü gesendet wurden und ob diese gelesen wurden.\
+            \
+            Aktuell noch nicht verfügbar.
+          </Tab>
+          <Tab title="E-Mails">
+            In diesem Menü kann eingesehen werden, ob dem User E-Mails über das Adminmenü gesendet wurden und ob diese gelesen wurden.\
+            \
+            Aktuell noch nicht verfügbar.
+          </Tab>
+          <Tab title="Teams">
+            In diesem Menü kann eingesehen werden, welchen Teams der Benutzer zugehörig ist.\
+            \
+            Der Benutzer kann auch einem Team hinzugefügt oder aus einem Team entfernt werden.
+
+            - Über das linke Dropdown-Menü wird das Team ausgewählt.
+            - Über das rechte Dropdown-Menü wird die Rolle ausgewählt, mit welcher der Benutzer dem Team zugewiesen wird.
+          </Tab>
+        </Tabs>
+        <Tabs>
+          <Tab title="Verbundene Konten">
+            In diesem Menü kann eingesehen werden, welche Konten mit dem Benutzerkonto verbunden sind.\
+            \
+            Siehe auch "User Connections" oder "User Connection Bans"
+          </Tab>
+          <Tab title="Badges">
+            In diesem Menü kann eingesehen werden, welche Badges dem Benutzerkonto zugewiesen sind.\
+            \
+            Es können dem Benutzerkonto Badges vergeben oder entfernt werden.\
+            \
+            Über das Dropdown-Menü kann ein Badge ausgewählt und über die Schaltfläche "<Icon icon="circle-plus" /> Badge hinzufügen" vergeben werden.
+          </Tab>
+          <Tab title="Berechtigungen">
+            In diesem Menü wird angezeigt, wenn einem Benutzerkonto besondere Berechtigungen z.B. "Admin" zugewiesen sind.
+          </Tab>
+        </Tabs>
+      </Accordion>
     </Accordion>
     <Accordion title="User Connection Bans" description="Beschreibung aller Funktionen in diesem Menü." icon="ban">
-      
+      Über dieses Menü kann eine Verbindung für eine Verbindung/Verknüpfung (z.B. Discord) gesperrt werden.\
+      \
+      Der jeweilige Account kann in keinem Profil mehr hinterlegt werden.\
+      Ebenso ist dann ein Login über diesen Account nicht mehr möglich.\
+      \
+      Durch das Klicken auf die Schaltfläche "<Icon icon="circle-plus" /> Erstellen" kann ein neuer Eintrag generiert werden. Es öffnet sich ein Popup Fenster.
+
+      - Platform: Hier kann zunächst über dein Dropdown-Menü ausgewählt werden, zu welcher Plattform der Account gehört, welcher gesperrt werden soll.
+      - Platform ID: Hier kann der Benutzername/ID des Accounts eingetragen werden, welcher gesperrt werden soll.
+      - Grund: Hier kann optional ein Grund eingetragen werden.
+
+      Durch das Klicken auf die Schaltfläche "Erstellen" kann der Eintrag erstellt und der Benutzeraccount entsprechend gesperrt werden.\
+      \
+      Über die Schaltfläche <Icon icon="trash" color="#ff0000" /> kann die Sperre gelöscht werden.
     </Accordion>
     <Accordion title="User Connections" description="Beschreibung aller Funktionen in diesem Menü." icon="code-simple">
-      
+      In diesem Menü können die hinterlegten Verbindungen / Verknüpfungen aller User eingesehen werden.\
+      \
+      Über die Suche, kann nach einem spezifischen Eintrag oder auch nach einer Plattform (z.B. Discord oder RiotGames) gesucht werden.\
+      \
+      In diesem Menü sind nur Einträge zu finden, welche von Usern hinterlegt wurden.\
+      \
+      Über die Schaltfläche <Icon icon="user-large" /> wird das Profil des Benutzers im Backend aufgerufen, über welches die Verlinkung editiert werden kann.\
+      \
+      Über die Schaltfläche <Icon icon="trash" color="#ff0000" /> kann die Verlinkung gelöscht werden.
     </Accordion>
   </AccordionGroup>
 </Accordion>
