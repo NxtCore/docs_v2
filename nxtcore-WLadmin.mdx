@@ -272,7 +272,326 @@ description: "Beschreibung aller Funktionen in der Admin-Oberfläche."
       Turnierserien haben aktuell noch keine wirkliche Funktion.
     </Accordion>
     <Accordion title="Turniere" description="Beschreibung aller Funktionen in diesem Menü." icon="trophy">
-      In diesem Menü können Turniere angeleg, verwaltet, bearbeitet und gelöscht werden.
+      In diesem Menü können Turniere angeleg, verwaltet, bearbeitet und gelöscht werden.\
+      \
+      Alle angelegten Turniere werden hier angezeigt.\
+      Zu sehen ist:
+
+      - Der Turniername = "Name"
+      - ~~Der Organisator = Im Werksliga Modell nicht verfügbar~~
+      - Visibility: Zeigt an, ob ein Turnier für den Benutzer im Frontend zu sehen ist.
+      - Start am: Zeigt den Turnierstart an.
+      - Erstellt am: Zeigt an, wann das Turnier angelegt wurde.
+      - Aktionen: Hier kann das Turnier\
+        <Icon icon="copy" /> kopiert werden
+
+        <Icon icon="paintbrush-pencil" /> bearbeitet werden
+
+        <Icon icon="trash" color="#ff0000" /> gelöscht werden
+
+      Über die Schaltfläche "Erstellen" kann ein Turnier erstellt werden.\
+      Weitere Infos hierzu im nächsten Menü:
+
+      <Accordion title="Turnier anlegen" description="Beschreibung aller Funktionen beim Erstellen eines Turniers." icon="sparkles">
+        \
+        Es öffnet sich zunächst eine Eingabemaske mit folgenden Tabs:\
+        _<sup>(Erklärung folgt in den Tabs)</sup>_
+
+        <Tabs>
+          <Tab title="Allgemein">
+            Hier werden die Grundinformationen zum Turnier ausgefüllt.\
+            Diese können nach dem erstellen noch bearbeitet werden.\
+            \
+            <u>Die einzelnen Eingabefelder werden in chronologischer Reihenfolge erklärt:</u>
+
+            - Name: Trage den Namen des Turnier ein
+            - Teilnehmer Anzahl: Trage die Anzahl ein, wieviele Teilnehmer am Turnier teilnehmen dürfen. \
+              \
+              ACHTUNG\!: Bei Turnieren mit einem Turnierbaum muss immer eine Anzahl in einer 2er Potenz (2, 4, 8, 16, 32, 64, etc.) gewählt werden.
+            - Teilnehmer Art: Wähle ob als "Spieler" oder als "Team" gespielt wird.
+            - Organisator: Hier kann der Organisator ausgewählt werden, sofern dieser angelegt ist. (Beim Werksliga-Frontend nicht integriert weil nicht gewünscht)
+            - Game: Wähle das Spiel aus, welches gespielt werden soll.\
+              Diese Option läd ggf. spielspezifische Voreinstellungen.
+
+              ![download.png](/images/download.png)
+          </Tab>
+          <Tab title="Termine">
+            In diesem Tab werden die Zeitfenster für die jeweiligen Phasen von Start der Registration bis zum Ende des Turniers festgelegt.\
+            \
+            Diese können nach dem erstellen noch bearbeitet werden.\
+            \
+            Bei Eingabeoptionen mit zwei Eingabefenstern ist das <u>linke Eingabefeld das Startdatum</u> und das <u>rechte Eingabefeld das Enddatum</u>.
+
+            Alle Zeiten können auch im Nachgang noch verändert werden.\
+            \
+            \*\*Sind alle Felder mit \*\*<Icon icon="asterisk" color="#ff0000" size={10} />**in beiden Tabs ausgefüllt, kann das Turnier durch das Klicken auf die Schaltfläche "Erstellen" angelegt werden.** \
+            \
+            <u>Die einzelnen Eingabefelder werden in chronologischer Reihenfolge erklärt:</u>
+
+            - Registration: Hier wird angegeben, <u>ab wann</u> und <u>bis wann</u> sich Spieler/Teams für das Event registrieren können.
+            - Check-In: Teams, welche sich in der Registrations-Phase für das Turnier registriert haben, können Ihre Teilnahme, ab dem Beginn der "Check-In"-Phase, durch den "Check-In" noch einmal bestätigen. Erst nach dem "Check-In" nimmt ein Team am Turnier teil.
+            - Late Registration: Die Late-Registration gibt Spielern/Teams die möglichkeit, freie, nicht genutzte Plätze, welche z.B. dadurch freigeworden sind, weil Spieler/Teams den "Check-In" verpasst haben, nach der Beendingung der "Check-In"-Phase zu belegen. \
+              \
+              Ist mindestens ein Platz frei und ein Spieler/Team drückt auf der Turnierseite auf "Late-Registration", so wird dieser Spieler/dieses Team für das Turnier registriert und sofort eingecheckt. Hier gibt es keine weitere "Check-In"-Phase.
+            - Start: Bestimmt das Startdatum des Turniers. Ab hier wird gespielt.
+            - Ende: Bestimmt das Enddatum des Turniers.
+
+              ![Turniereersttermine Pn](/images/turniereersttermine.png)
+          </Tab>
+        </Tabs>
+        **Sind alle Felder mit  in beiden Tabs ausgefüllt, kann das Turnier durch das Klicken auf "Erstellen" angelegt werden.**
+      </Accordion>
+      Ist das Turnier einmal angelegt, folgt der nächste Schritt.\
+      Es müssen weitere Informationen hinzugefügt werden.\
+      **Klicke hierzu auf das Icon <Icon icon="paintbrush-pencil" /> "Bearbeiten".**
+
+      <Accordion title="Turnier bearbeiten" description="Beschreibung aller Funktionen zum Bearbeiten eines Turniers." icon="sparkles">
+        In der Adminoberfläche sind die Funktionen in Tabs unterteilt.\
+        Wähle den Tab aus, zu dem Informationen benötigt werden.\
+        Da es zu viele Tabs gibt, um in dieser Dokumentation alle neben ein ander zu bekommen, haben wir diese auf zwei Abschnitte unterteilt.
+
+        <Tabs>
+          <Tab title="Allgemein">
+            Erklärung aller Funktionen, Eingabeflächen und Schaltflächen in diesem Tab in chronologischer Reihenfolge:
+
+            - Name: Hier kann der Turniername bearbeitet werden.
+            - Teilnehmer Anzahl: Hier kann die Anzahl der Teilnehmer bearbeitet werden.
+
+              Zudem kann ausgewählt werden, ob eine "Überbuchung" möglich ist.\
+              <Icon icon="circle-xmark" color="#ff0000" /> deaktiviert die Überbuchung\
+              <Icon icon="circle-check" color="#16ff00" /> aktiviert die Überbuchung\
+              _"Überbuchung" bedeutet, dass ich mehr Spieler/Teams anmelden können, als letztendlich mitspielen dürfen. _\
+              \
+              _Diese Funktion kann z.B. genutzt werden, um das Turnier aufzufüllen, für den Fall das Spieler/Teams zum Turnierstart trotz "Check-In" nicht anwesend sind ODER wenn man nicht sicher ist, ob sich genügend Spieler/Teams anmelden um den nächsten Schritt in der 2er Potenz für die benötigte Turniergröße zu erreichen,  man sich diesen aber offen halten möchte._
+            - Teilnehmer Art: Hier kann die Teilnehmer Art zwischen "Spieler" und "Teams" verändert werden. \
+              \
+              **ACHTUNG\! Sind bereits Spieler oder Teams angemeldet, müssen diese Teilnehmer erst aus dem Turnier entfernt werden.**\
+              **Anleitung hierzu im Tab "Teilnehmer"**
+            - Organisator: Hier kann der Organisator angegeben oder geändert werden.
+            - Game: Hier kann das Game angegeben oder geändert werden.
+            - Color Scheme: Hier kann ein spezielles "Color Scheme" ausgewählt werden, sofern angelegt. Hierfür bitte bei NxtCore melden.
+            - Zusätzlich benötigte Verlinkungen: Hier können benötigte Verlinkungen wie z.B. Discord, Steam, Epic, Riot Games etc. angegeben werden.
+
+            Turnier Series: Ist eine Turnierserie angelegt, kann das Turnier dieser zugewiesen werden. _Siehe Anleitung zu Menü "Turnier Serien"_
+
+            **Meta Flags**
+
+            Meta Flags sind Funktionen, welche durch das Klicken auf die jeweilige Schaltfläche\
+            \
+            <Icon icon="circle-xmark" color="#ff0000" /> deaktiviert\
+            oder\
+            <Icon icon="circle-check" color="#04ff00" /> aktiviert\
+            \
+            werden können.\
+            \
+            Diese werden hier noch einmal erklärt:
+
+            - Hidden?: Hier kann angegeben werden, ob das Turnier öffentlich sichtbar ist oder nicht. \
+              \
+              <Icon icon="circle-xmark" color="#ff0000" /> Nicht öffentlich sichtbar (nur über direktlink)\
+              <Icon icon="circle-check" color="#76ff00" /> Öffentlich Sichtbar (über frontend)
+            - Featured?: Turniere werden im Frontend "Highlighted" 
+            - Sollen Teilnehmer(\+Anzahl) angezeigt werden?: Gibt an, ob die Teilnehmer und die Anzahl der Teilnehmer auf der Turnierseite angezeigt werden sollen oder nicht.\
+              \
+              <Icon icon="circle-xmark" color="#ff0000" /> für "nein", wird nicht angezeigt\
+              <Icon icon="circle-check" color="#2eff00" /> für ja, werden angezeigt
+            - Admin Only?: Spieler können keine Ergebnisse eintragen\
+              \
+              <Icon icon="circle-xmark" color="#ff0000" /> Spieler können Ergebnisse eintragen
+
+              <Icon icon="circle-check" color="#28ff00" /> Spieler können keine Ergebnisse eintragen
+
+            **Eine veränderung immer mit dem Klick auf "Aktualisieren" bestätigen und speichern.**
+          </Tab>
+          <Tab title="Termine">
+            In diesem Tab werden die Zeitfenster für die jeweiligen Phasen von Start der Registration bis zum Ende des Turniers festgelegt.\
+            \
+            Diese können nach dem erstellen noch bearbeitet werden.\
+            \
+            Bei Eingabeoptionen mit zwei Eingabefenstern ist das <u>linke Eingabefeld das Startdatum</u> und das <u>rechte Eingabefeld das Enddatum</u>.
+
+            Alle Zeiten können auch im Nachgang noch verändert werden.\
+            \
+            <u>Die einzelnen Eingabefelder werden in chronologischer Reihenfolge erklärt:</u>
+
+            - Registration: Hier wird angegeben, <u>ab wann</u> und <u>bis wann</u> sich Spieler/Teams für das Event registrieren können.
+            - Check-In: Teams, welche sich in der Registrations-Phase für das Turnier registriert haben, können Ihre Teilnahme, ab dem Beginn der "Check-In"-Phase, durch den "Check-In" noch einmal bestätigen. Erst nach dem "Check-In" nimmt ein Team am Turnier teil.
+            - Late Registration: Die Late-Registration gibt Spielern/Teams die möglichkeit, freie, nicht genutzte Plätze, welche z.B. dadurch freigeworden sind, weil Spieler/Teams den "Check-In" verpasst haben, nach der Beendingung der "Check-In"-Phase zu belegen. \
+              \
+              Ist mindestens ein Platz frei und ein Spieler/Team drückt auf der Turnierseite auf "Late-Registration", so wird dieser Spieler/dieses Team für das Turnier registriert und sofort eingecheckt. Hier gibt es keine weitere "Check-In"-Phase.
+            - Start: Bestimmt das Startdatum des Turniers. Ab hier wird gespielt.
+            - Ende: Bestimmt das Enddatum des Turniers.
+
+            **Eine veränderung immer mit dem Klick auf "Aktualisieren" bestätigen und speichern.**
+          </Tab>
+          <Tab title="Matches">
+            Erklärung aller Funktionen, Eingabeflächen und Schaltflächen in diesem Tab in chronologischer Reihenfolge:
+
+            - Format: Gibt den Spielmodus an. Aktuell nur "BEST_OF" vorhanden.
+            - Anzahl Spiele: Gibt die Anzahl der Spiele pro Match an.
+            - Automatische Bestätigung: Gibt die Zeit in Minuten an, bis das Match nach Eingabe des Ergebnisses bestätigt und der Gewinner im Turnier weiter geschoben wird. Funktioniert nur, wenn "Automatisch Gewinner in nächstes Spiel schieben" aktiviert ist.
+            - Automatisch Gewinner in nächstes Spiel schieben?\
+              <Icon icon="circle-xmark" color="#ff0000" /> Gewinner wird nicht automatisch verschoben
+
+              <Icon icon="circle-check" color="#1cff00" /> Gewinner wird automatisch verschoben
+
+            **Eine veränderung immer mit dem Klick auf "Aktualisieren" bestätigen und speichern.**
+          </Tab>
+          <Tab title="Beschreibung">
+            Hier kann eine Beschreibung für das Turnier angegeben oder bearbeitet werden.\
+            \
+            Hierbei handelt es sich um einen Texteditor.\
+            Es können neben Texten auch Bilder und Links eingefügt werden.\
+            \
+            **Eine veränderung immer mit dem Klick auf "Aktualisieren" bestätigen und speichern.**
+          </Tab>
+          <Tab title="Regeln">
+            In diesem Menü können Regeln erstellt und bearbeitet werden.\
+            \
+            Sofern im Menü "Regelwerke" Regelwerke erstellt wurden, können diese über die Schaltfläche "Synchronisieren mit" geladen werden.
+
+            **Eine veränderung immer mit dem Klick auf "Aktualisieren" bestätigen und speichern.**
+          </Tab>
+        </Tabs>
+        <Tabs>
+          <Tab title="Proteste">
+            Es gibt aktuell noch keine Protestfunktion.\
+            In Arbeit\
+            \
+            Erklärung der Funktionen:
+
+            - Proteste aktiviert?: Aktiviert oder deaktiviert die Protestfunktion für das Turnier.
+            - Reopenable?: Gibt an, ob ein Protest, nachdem es von einem Admin geschlossen wurde, vom Benutzer nochmal geöffnet werden kann.
+          </Tab>
+          <Tab title="Assets">
+            Hier können Banner und Logo hochgeladen oder bearbeitet werden.\
+            \
+            <u>Bildformate:</u>\
+            \
+            Banner: 16:9\
+            Logo: 1:1
+          </Tab>
+          <Tab title="Preise">
+            In diesem Menü können die Preise angelegt werden.\
+            \
+            Mit dem Klick auf "Preise hinzufügen" kann ein neuer "Preis" angelegt werden.\
+            \
+            Hier kann der Name und die Platzierung angegeben werden.\
+            Mit der Funktion "is Range?" können mehrere Platzierungen für den selben Preis hinterlegt werden.\
+            \
+            z.B. Platz 5 bis 8 bekommen den selben Preis.\
+            \
+            **Eine veränderung immer mit dem Klick auf "Aktualisieren" bestätigen und speichern.**
+          </Tab>
+          <Tab title="Teilnehmer">
+            In diesem Menü können Teilnehmer für dieses Turnier hinzugefügt oder entfernt werden.\
+            \
+            Wähle den Teilnehmer über das Dropdown-Menü aus, welcher hinzugefügt werden soll.\
+            \
+            Nach dem Auswählen des Teilnehmers, die Auswahl mit "<Icon icon="circle-plus" /> Teilnehmer hinzufügen" bestätigen. _(Siehe Screenshots)_
+
+            ![Turnierteilnehmeradd Jp](/images/turnierteilnehmeradd.jpg)
+
+            <img
+              src="/images/turnierteilnehmeradd2.png"
+              alt="Turnierteilnehmeradd2 Pn"
+              title="Turnierteilnehmeradd2 Pn"
+              style={{ width:"100%" }}
+            />
+
+            Ist ein Teilnehmer hinzugefügt, kann eingesehen werden, ob dieser den "Check-In" bereits durchgeführt hat.\
+            \
+            Der Check-In für einen Teilnehmer kann auch manuell durchgeführt werden.\
+            Mit dem Klicken auf die Schaltfläche <Icon icon="play" color="#40ff00" /> kann der Check-In manuell erfolgen.\
+            \
+            Über die selbe Schaltfläche kann der Check-In auch rückgängig gemacht werden.\
+            \
+            Über die Schaltfläche <Icon icon="trash" color="#ff0000" /> kann ein Teilnehmer aus dem Turnier entfernt werden.
+
+            ![Manuellcheckin Pn](/images/manuellcheckin.png)
+          </Tab>
+          <Tab title="Stages">
+            Über dieses Menü können Stages angelegt werden.\
+            \
+            Stages sind die Turniersektionen, in denen bestimmt wird, welcher Modus gespielt wird. Hier wird auch der Turnierbaum / Gruppenphase etc. erstellt.
+
+            Durch das Klicken auf "Stage erstellen" öffnet sich ein Popup Fenster, in dem folgende Informationen angegeben werden müssen:
+
+            - Name: Name der Stage
+            - Size: Größe der Stage (Anzahl Teilnehmer des Turnierbaums/der Gruppenphase/Swiss etc.)
+
+            Typ: Gibt an, welche Art von Turnier gespielt werden soll.\
+            Hier gibt es 
+
+            - Single Elimination
+            - Single Elimination with Decider
+            - Double Elimination
+            - Gruppen
+            - Swiss System
+            - Aggregated Team Scoring (z.B. für Fallguys)
+
+            Wenn die Stage erstellt wurde, kann diese über die Schaltfläche <Icon icon="paintbrush-pencil" /> bearbeitet werden.\
+            \
+            Die Funktionen und Schaltflächen werden in den nachfolgenden Tabs erklärt:
+
+            <Tabs>
+              <Tab title="Allgemein">
+                Erklärung der Eingabefelder in chronologischer Reihenfolge:
+
+                - Name: Hier kann der Name der Stage geändert werden.
+                - Teilnehmer Anzahl: Hier kann die Anzahl der Teilnehmer für die Stage verändert werden.
+                - Stage Type: Hier kann der "Turniertyp" eingesehen werden.\
+                  Dieser Wert kann nicht verändert werden.\
+                  Wenn ein anderer "Stagetype" / "Turniertyp" benötigt wird, muss die Stage neu erstellt werden.
+              </Tab>
+              <Tab title="Match Config">
+                In diesem Menü können Tiebreaker hinzugefügt werden.\
+                _Ein Tiebreaker ist eine Regel oder ein Verfahren, um einen Gleichstand zu entscheiden. Er dient dazu, eine Entscheidung abzukürzen und ein weitere Spielen zu vermeiden._\
+                \
+                **Die Tiebreaker werden immer in Absteigender Reihenfolge angewendet.\
+                Der Tiebreaker, der weiter oben steht, wird als erstes auf Anwendbarkeit überprüft.**
+
+                <u>Legende zu Begriffen:</u>
+
+                - Match = Ganzes Spiel
+                - Maps = Teilung des Spiels. Wird ein Match im Best of 3 gespielt, hat ein Match 3 Maps
+                - Runden = Runden in einer Maps. In Valorant wird z.B. i.d.R. solange gespielt, bis ein Team 13 Runden gewonnen hat.
+
+                <u>Erklärung der einzelnen Tiebreaker:</u>
+
+                - Punktevergleich: Es werden die Punkte in der Tabelle verglichen und die Teilnehmer an Hand Ihrer Punkte platziert.
+                - Match Siege Gesamt: Es werden die "Matchsiege" verglichen und die Teilnehmer an Hand dieser platziert. Ein "Match" ist ein "ganzes Spiel"\
+                  _Beispiel: 1 Match hat 3 Maps (Best of 3), hat ein Team 2:1 gewonnen, hat es das Match gewonnen._
+                - Match Siege Direktvergleich: Hier werden auch die "Matchsiege" vergleichen. Allerdings wird hier geprüft, ob eine Auflösung im "direkten Vergleich" möglich ist. Diese Prüfung ist nur dann möglich, wenn eine Punktgleichheit besteht. Es wird überprüft, ob eines der Teams (bei Punktgleichheit oder wenn vorherige Tie-Breaker keine Entscheidung herbeiführen konnten) im direkten Vergleich der "Matches" vorne liegt.
+                - Match Siege, Unentschieden, Niederlagen Gesamt: Es werden die "Match-Siege, Unentschieden und Niederlagen" verglichen und die Teilnehmer an Hand dieser platziert. Ein "Match" ist ein "ganzes Spiel".\
+                  _Beispiel: 1 Match hat 3 Maps (Best of 3), hat ein Team 2:1 gewonnen, hat es das Match gewonnen. Somit bekommt ein Team einen "Sieg" und das andere Team eine "Niederlage" angerechnet._
+                - Match Siege, Unentschieden, Niederlagen Direktvergleich: Hier werden auch die "Match-Siege, Unentschieden und Niederlagen" vergleichen. Allerdings wird hier geprüft, ob eine Auflösung im "direkten Vergleich" möglich ist. Diese Prüfung ist nur dann möglich, wenn eine Punktgleichheit besteht. Es wird überprüft, ob eines der Teams (bei Punktgleichheit oder wenn vorherige Tie-Breaker keine Entscheidung herbeiführen konnten) im direkten Vergleich der "Matches" vorne liegt.
+                - Map Siege Gesamt: Es werden die "Mapsiege" verglichen und die Teilnehmer an Hand dieser platziert.\
+                  _Beispiel: 1 Match hat 3 Maps (Best of 3), jede Runde ist "eine Map". Hat ein Team 2:1 gewonnen, hat es das Match gewonnen und bekommt 2 Maps als gewonnen und 1 Map als verloren angerechnet._
+                - Map Siege Direktvergleich: Hier werden auch die "Mapsiege" vergleichen. Allerdings wird hier geprüft, ob eine Auflösung im "direkten Vergleich" möglich ist. Diese Prüfung ist nur dann möglich, wenn eine Punktgleichheit besteht. Es wird überprüft, ob eines der Teams (bei Punktgleichheit oder wenn vorherige Tie-Breaker keine Entscheidung herbeiführen konnten) im direkten Vergleich der "Maps" vorne liegt.
+                - Map Siege, Unentschieden, Niederlagen Gesamt: Es werden die "Map-Siege, Unentschieden und Niederlagen" verglichen und die Teilnehmer an Hand dieser platziert. \
+                  _Beispiel: 1 Match hat 3 Maps (Best of 3), jede Runde ist "eine Map". Hat ein Team 2:1 gewonnen, hat es das Match gewonnen und bekommt 2 Maps als gewonnen und 1 Map als verloren angerechnet._
+                - Map Siege, Unentschieden, Niederlagen Direktvergleich: Hier werden auch die "Map-Siege, Unentschieden, Niederlagen" verglichen. Allerdings wird hier geprüft, ob eine Auflösung im "direkten Vergleich" möglich ist. Diese Prüfung ist nur dann möglich, wenn eine Punktgleichheit besteht. Es wird überprüft, ob eines der Teams (bei Punktgleichheit oder wenn vorherige Tie-Breaker keine Entscheidung herbeiführen konnten) im direkten Vergleich der "Maps" vorne liegt.
+                - Map Differenz Gesamt: Hier wird die Differenz der "gewonnenen" und der "verlorenen" "Maps" verglichen.
+                - Map Differenz Direktvergleich: Hier wird auch die Differenz der "gewonnenen" und der verlorenen "Maps" verglichen. Allerdings wird hier geprüft, ob eine Auflösung im "direkten Vergleich" möglich ist. Diese Prüfung ist nur dann möglich, wenn eine Punktgleichheit besteht. Es wird überprüft, ob eines der Teams (bei Punktgleichheit oder wenn vorherige Tie-Breaker keine Entscheidung herbeiführen konnten) im direkten Vergleich der "gewonnenen" und der "verlorenen" "Maps" vorne liegt.
+                - Rundenvergleich Gesamt: Hier wird die Differenz der "gewonnen"  und der "verlorenen" Runden verglichen und die Teilnehmer an Hand dieser platziert.
+                - Rundenvergleich Direktvergleich:  Hier wird auch die Differenz der "gewonnenen" und der verlorenen "Runden" verglichen. Allerdings wird hier geprüft, ob eine Auflösung im "direkten Vergleich" möglich ist. Diese Prüfung ist nur dann möglich, wenn eine Punktgleichheit besteht. Es wird überprüft, ob eines der Teams (bei Punktgleichheit oder wenn vorherige Tie-Breaker keine Entscheidung herbeiführen konnten) im direkten Vergleich der "gewonnenen" und der "verlorenen" "Runden" vorne liegt.
+                - Runden Siege, Unentschieden, Niederlagen Gesamt: Es werden die "Runden-Siege, Unentschieden und Niederlagen" verglichen und die Teilnehmer an Hand dieser platziert. \
+                  _Beispiel: 1 Match hat 3 Maps (Best of 3), jede Runde ist "eine Map". Hat ein Team 2:1 gewonnen, hat es das Match gewonnen und bekommt 2 Maps als gewonnen und 1 Map als verloren angerechnet. Die Maps wurden 2:0, 2:0 und 0:2 gespielt. Also bekommt das Team, welches 2:1 gewonnen hat 4 "Runden" als "gewonnen" und 2 "Runden" als "verloren" gewertet._
+                - Runden Siege, Unentschieden, Niederlagen Direktvergleich: Hier wird auch die Differenz der "gewonnenen" und der verlorenen "Runden" verglichen. Allerdings wird hier geprüft, ob eine Auflösung im "direkten Vergleich" möglich ist. Diese Prüfung ist nur dann möglich, wenn eine Punktgleichheit besteht. Es wird überprüft, ob eines der Teams (bei Punktgleichheit oder wenn vorherige Tie-Breaker keine Entscheidung herbeiführen konnten) im direkten Vergleich der "gewonnenen" und der "verlorenen" "Runden" vorne liegt.
+                - Runden Siege Gesamt: Es werden die "Rundensiege" verglichen und die Teilnehmer an Hand dieser platziert.\
+                  _Beispiel: 1 Match hat 3 Maps (Best of 3). Hat ein Team 2:1 gewonnen, hat es das Match gewonnen und bekommt 2 Maps als gewonnen und 1 Map als verloren angerechnet. Die Maps wurden 2:0, 2:0 und 0:2 gespielt. Also bekommt das Team, welches 2:1 gewonnen hat 4 "Runden" als "gewonnen" und 2 "Runden" als "verloren" gewertet._
+                - Runde Siege Direktvergleich: Hier werden auch die "Rundensiege" vergleichen. Allerdings wird hier geprüft, ob eine Auflösung im "direkten Vergleich" möglich ist. Diese Prüfung ist nur dann möglich, wenn eine Punktgleichheit besteht. Es wird überprüft, ob eines der Teams (bei Punktgleichheit oder wenn vorherige Tie-Breaker keine Entscheidung herbeiführen konnten) im direkten Vergleich der "Runden" vorne liegt.
+              </Tab>
+              <Tab title="Bye Config">
+                In diesem Menü kann eingestellt werden, was bei einem automatischen "Default-Win", z.B. durch ungleiche Teilnehmeranzahlen in einem Turnierbaum, geschehen soll.\
+                \
+                Mit "Anzahl Spiele" kann eine Anzahl von "Matches" definiert werden, welche bei einem automatischen "Default Win" vom System vergeben werden.
+              </Tab>
+            </Tabs>
+          </Tab>
+        </Tabs>
+      </Accordion>
     </Accordion>
   </AccordionGroup>
 </Accordion>
