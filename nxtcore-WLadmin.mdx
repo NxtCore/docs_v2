@@ -429,7 +429,7 @@ description: "Beschreibung aller Funktionen in der Admin-Oberfläche."
       </Accordion>
       Ist das Turnier einmal angelegt, folgt der nächste Schritt.\
       Es müssen weitere Informationen hinzugefügt werden.\
-      **Klicke hierzu auf das Icon <Icon icon="paintbrush-pencil" /> "Bearbeiten".**
+      **Klicke hierzu auf das Icon  "Bearbeiten".**
 
       <Accordion title="Turnier bearbeiten" description="Beschreibung aller Funktionen zum Bearbeiten eines Turniers." icon="sparkles">
         In der Adminoberfläche sind die Funktionen in Tabs unterteilt.\
@@ -446,7 +446,7 @@ description: "Beschreibung aller Funktionen in der Admin-Oberfläche."
               Zudem kann ausgewählt werden, ob eine "Überbuchung" möglich ist.\
               <Icon icon="circle-xmark" color="#ff0000" /> deaktiviert die Überbuchung\
               <Icon icon="circle-check" color="#16ff00" /> aktiviert die Überbuchung\
-              _"Überbuchung" bedeutet, dass ich mehr Spieler/Teams anmelden können, als letztendlich mitspielen dürfen. _\
+              \_"Überbuchung" bedeutet, dass ich mehr Spieler/Teams anmelden können, als letztendlich mitspielen dürfen. \_\
               \
               _Diese Funktion kann z.B. genutzt werden, um das Turnier aufzufüllen, für den Fall das Spieler/Teams zum Turnierstart trotz "Check-In" nicht anwesend sind ODER wenn man nicht sicher ist, ob sich genügend Spieler/Teams anmelden um den nächsten Schritt in der 2er Potenz für die benötigte Turniergröße zu erreichen,  man sich diesen aber offen halten möchte._
             - Teilnehmer Art: Hier kann die Teilnehmer Art zwischen "Spieler" und "Teams" verändert werden. \
@@ -476,7 +476,7 @@ description: "Beschreibung aller Funktionen in der Admin-Oberfläche."
               \
               <Icon icon="circle-xmark" color="#ff0000" /> Nicht öffentlich sichtbar (nur über direktlink)\
               <Icon icon="circle-check" color="#76ff00" /> Öffentlich Sichtbar (über frontend)
-            - Featured?: Turniere werden im Frontend "Highlighted" 
+            - Featured?: Turniere werden im Frontend "Highlighted"
             - Sollen Teilnehmer(\+Anzahl) angezeigt werden?: Gibt an, ob die Teilnehmer und die Anzahl der Teilnehmer auf der Turnierseite angezeigt werden sollen oder nicht.\
               \
               <Icon icon="circle-xmark" color="#ff0000" /> für "nein", wird nicht angezeigt\
@@ -548,6 +548,8 @@ description: "Beschreibung aller Funktionen in der Admin-Oberfläche."
 
             - Proteste aktiviert?: Aktiviert oder deaktiviert die Protestfunktion für das Turnier.
             - Reopenable?: Gibt an, ob ein Protest, nachdem es von einem Admin geschlossen wurde, vom Benutzer nochmal geöffnet werden kann.
+
+            **Eine veränderung immer mit dem Klick auf "Aktualisieren" bestätigen und speichern.**
           </Tab>
           <Tab title="Assets">
             Hier können Banner und Logo hochgeladen oder bearbeitet werden.\
@@ -556,6 +558,8 @@ description: "Beschreibung aller Funktionen in der Admin-Oberfläche."
             \
             Banner: 16:9\
             Logo: 1:1
+
+            **Eine veränderung immer mit dem Klick auf "Aktualisieren" bestätigen und speichern.**
           </Tab>
           <Tab title="Preise">
             In diesem Menü können die Preise angelegt werden.\
@@ -595,6 +599,8 @@ description: "Beschreibung aller Funktionen in der Admin-Oberfläche."
             Über die Schaltfläche <Icon icon="trash" color="#ff0000" /> kann ein Teilnehmer aus dem Turnier entfernt werden.
 
             ![Manuellcheckin Pn](/images/manuellcheckin.png)
+
+            **Eine veränderung immer mit dem Klick auf "Aktualisieren" bestätigen und speichern.**
           </Tab>
           <Tab title="Stages">
             Über dieses Menü können Stages angelegt werden.\
@@ -607,7 +613,7 @@ description: "Beschreibung aller Funktionen in der Admin-Oberfläche."
             - Size: Größe der Stage (Anzahl Teilnehmer des Turnierbaums/der Gruppenphase/Swiss etc.)
 
             Typ: Gibt an, welche Art von Turnier gespielt werden soll.\
-            Hier gibt es 
+            Hier gibt es
 
             - Single Elimination
             - Single Elimination with Decider
@@ -629,23 +635,22 @@ description: "Beschreibung aller Funktionen in der Admin-Oberfläche."
                 - Stage Type: Hier kann der "Turniertyp" eingesehen werden.\
                   Dieser Wert kann nicht verändert werden.\
                   Wenn ein anderer "Stagetype" / "Turniertyp" benötigt wird, muss die Stage neu erstellt werden.
+
+                **Eine veränderung immer mit dem Klick auf "Aktualisieren" bestätigen und speichern.**
               </Tab>
               <Tab title="Match Config">
                 In diesem Menü können Tiebreaker hinzugefügt werden.\
                 _Ein Tiebreaker ist eine Regel oder ein Verfahren, um einen Gleichstand zu entscheiden. Er dient dazu, eine Entscheidung abzukürzen und ein weitere Spielen zu vermeiden._\
                 \
-                **Die Tiebreaker werden immer in Absteigender Reihenfolge angewendet.\
-                Der Tiebreaker, der weiter oben steht, wird als erstes auf Anwendbarkeit überprüft.**
+                **Die Tiebreaker werden immer in Absteigender Reihenfolge angewendet.Der Tiebreaker, der weiter oben steht, wird als erstes auf Anwendbarkeit überprüft.**
 
-                <u>Legende zu Begriffen:</u>
+                Legende zu Begriffen:- Match = Ganzes Spiel
 
-                - Match = Ganzes Spiel
                 - Maps = Teilung des Spiels. Wird ein Match im Best of 3 gespielt, hat ein Match 3 Maps
                 - Runden = Runden in einer Maps. In Valorant wird z.B. i.d.R. solange gespielt, bis ein Team 13 Runden gewonnen hat.
 
-                <u>Erklärung der einzelnen Tiebreaker:</u>
+                Erklärung der einzelnen Tiebreaker:- Punktevergleich: Es werden die Punkte in der Tabelle verglichen und die Teilnehmer an Hand Ihrer Punkte platziert.
 
-                - Punktevergleich: Es werden die Punkte in der Tabelle verglichen und die Teilnehmer an Hand Ihrer Punkte platziert.
                 - Match Siege Gesamt: Es werden die "Matchsiege" verglichen und die Teilnehmer an Hand dieser platziert. Ein "Match" ist ein "ganzes Spiel"\
                   _Beispiel: 1 Match hat 3 Maps (Best of 3), hat ein Team 2:1 gewonnen, hat es das Match gewonnen._
                 - Match Siege Direktvergleich: Hier werden auch die "Matchsiege" vergleichen. Allerdings wird hier geprüft, ob eine Auflösung im "direkten Vergleich" möglich ist. Diese Prüfung ist nur dann möglich, wenn eine Punktgleichheit besteht. Es wird überprüft, ob eines der Teams (bei Punktgleichheit oder wenn vorherige Tie-Breaker keine Entscheidung herbeiführen konnten) im direkten Vergleich der "Matches" vorne liegt.
@@ -668,11 +673,15 @@ description: "Beschreibung aller Funktionen in der Admin-Oberfläche."
                 - Runden Siege Gesamt: Es werden die "Rundensiege" verglichen und die Teilnehmer an Hand dieser platziert.\
                   _Beispiel: 1 Match hat 3 Maps (Best of 3). Hat ein Team 2:1 gewonnen, hat es das Match gewonnen und bekommt 2 Maps als gewonnen und 1 Map als verloren angerechnet. Die Maps wurden 2:0, 2:0 und 0:2 gespielt. Also bekommt das Team, welches 2:1 gewonnen hat 4 "Runden" als "gewonnen" und 2 "Runden" als "verloren" gewertet._
                 - Runde Siege Direktvergleich: Hier werden auch die "Rundensiege" vergleichen. Allerdings wird hier geprüft, ob eine Auflösung im "direkten Vergleich" möglich ist. Diese Prüfung ist nur dann möglich, wenn eine Punktgleichheit besteht. Es wird überprüft, ob eines der Teams (bei Punktgleichheit oder wenn vorherige Tie-Breaker keine Entscheidung herbeiführen konnten) im direkten Vergleich der "Runden" vorne liegt.
+
+                **Eine veränderung immer mit dem Klick auf "Aktualisieren" bestätigen und speichern.**
               </Tab>
               <Tab title="Bye Config">
                 In diesem Menü kann eingestellt werden, was bei einem automatischen "Default-Win", z.B. durch ungleiche Teilnehmeranzahlen in einem Turnierbaum, geschehen soll.\
                 \
                 Mit "Anzahl Spiele" kann eine Anzahl von "Matches" definiert werden, welche bei einem automatischen "Default Win" vom System vergeben werden.
+
+                **Eine veränderung immer mit dem Klick auf "Aktualisieren" bestätigen und speichern.**
               </Tab>
             </Tabs>
           </Tab>
