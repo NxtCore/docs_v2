@@ -35,15 +35,28 @@
             ]
           },
           {
-            "group": "Übersicht",
+        "group": "Übersicht",
+        "pages": [
+          "nxtcore-WLinhaltverzeichnis",
+          "nxtcore-WLbenutzeroberflaeche"
+        ],
+        "subgroups": [
+          {
+            "group": "Admin-Bereich",
             "pages": [
-              "nxtcore-WLinhaltsverzeichnis",
-              "nxtcore-WLbenutzeroberflaeche",
               "nxtcore-WLfrontpage",
               "nxtcore-WLadmin"
-              
+            ]
+          },
+          {
+            "group": "Statistiken",
+            "pages": [
+              "nxtcore-WLstats",
+              "nxtcore-WLreports"
             ]
           }
+      ]
+    }
         ]
       },
       {
