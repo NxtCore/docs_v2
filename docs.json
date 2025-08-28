@@ -28,35 +28,19 @@
             "group": "Übersicht",
             "pages": [
               "nxtcore-WLinhaltsverzeichnis",
-              "nxtcore-WLbenutzeroberflaeche",
-              "nxtcore-WLfrontpage",
-              "nxtcore-WLadmin"
               
             ]
           },
           {
-        "group": "Übersicht",
-        "pages": [
-          "nxtcore-WLinhaltverzeichnis",
-          "nxtcore-WLbenutzeroberflaeche"
-        ],
-        "subgroups": [
-          {
-            "group": "Admin-Bereich",
+            "group": "Benutzeroberfläche",
             "pages": [
+              "nxtcore-WL1benutzeroberflaeche",
+              "nxtcore-WL1.1registrieren",
               "nxtcore-WLfrontpage",
               "nxtcore-WLadmin"
-            ]
-          },
-          {
-            "group": "Statistiken",
-            "pages": [
-              "nxtcore-WLstats",
-              "nxtcore-WLreports"
+              
             ]
           }
-      ]
-    }
         ]
       },
       {
