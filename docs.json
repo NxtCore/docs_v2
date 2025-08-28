@@ -34,6 +34,16 @@
               
             ]
           }
+          {
+            "group": "Übersicht",
+            "pages": [
+              "nxtcore-WLinhaltsverzeichnis",
+              "nxtcore-WLbenutzeroberflaeche",
+              "nxtcore-WLfrontpage",
+              "nxtcore-WLadmin"
+              
+            ]
+          }
         ]
       },
       {
