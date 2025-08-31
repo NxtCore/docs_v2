@@ -1,5 +1,79 @@
 ---
-title: 'New file'
-description: 'Description of your new file.'
+title: "Teams"
+description: "Beschreibung aller Funktionen in diesem Menü."
 ---
 
+<Card title="Übersicht" icon="users" horizontal>
+  Die Startseite, nach dem Klicken auf "Teams" wird hier als "Übersicht" bezeichnet.
+</Card>
+
+Über das Menü "Teams" können Teams angelegt, verwaltet und gelöscht werden.\
+\
+Zunächst folgt die Erklärung der "Übersicht"
+
+- **<u>Name: </u>**\
+  Der Name des Teams\
+  Über das Suchefeld kann ein Team über den Namen in der Liste gesucht werden.
+- **<u>Slug:</u>**\
+  Der Slug ist ein benutzerfreundlicher, eindeutiger Identifikator, der als Alternative zu einer numerischen ID für eine Ressource verwendet wird.\
+  Er dient in diesem Fall dazu, das Benutzerkonto klar und eindeutig zu kennzeichnen.\
+  Über das Suchefeld kann das Team über den Slug in der Liste gesucht werden.
+- **<u>Erstellt am:</u>**\
+  Zeigt das Datum an, wann das Team erstellt wurde.
+- **<u>Mitglieder:</u>**\
+  Zeigt an, wieviele Mitglieder im Team sind.
+- 
+- **<u>Aktionen:</u>**\
+  Durch klicken auf die Schaltfläche..\
+  \
+  <Icon icon="paintbrush-pencil" /> für bearbeiten: öffnet sich der Bearbeitungsmodus für das jeweilige Team
+
+  <Icon icon="trash" color="#ff0000" /> für löschen: wird das Team gelöscht. Es folgt ein Pop-Up Fenster, wo das Löschen des Teams nochmal bestätigt werden muss.
+
+<Card title="Team erstellen" icon="users" horizontal>
+  Hier wird beschrieben, wie ein Team erstellt werden kann.
+</Card>
+
+Mit dem Klicken auf die Schaltfläche "<Icon icon="circle-plus" /> Erstellen" öffnet sich ein Pop-Up Fenster.\
+In diesem Pop-Up Fenster muss
+
+- der Name des Teams eingegeben werden.
+- der Owner des Teams bestimmt werden.
+
+<Card title="Team bearbeiten" icon="users" horizontal>
+  Hier wird beschrieben, welche Änderungsmöglichkeiten nach dem Erstellen eines Teams vorhanden sind.
+</Card>
+
+<Tabs>
+  <Tab title="Allgemein">
+    <Tabs>
+      <Tab title="Allgemein">
+        - **<u>Name: </u>**\
+          Hier kann der Name des Teams bearbeitet werden
+        - **<u>Slug:</u>**\
+          Hier kann der Slug der Name des Teams verändert werden.\
+          _<sup>Der Slug ist ein benutzerfreundlicher, eindeutiger Identifikator, der als Alternative zu einer numerischen ID für eine Ressource verwendet wird. Er dient in diesem Fall dazu, das Benutzerkonto klar und eindeutig zu kennzeichnen.</sup>_
+        - **<u>Banner:</u>**\
+          Hier kann der Banner hinzugefügt, bearbeitet oder gelöscht werden.\
+          Maßstab 16:9
+        - A**<u>vatar:</u>**\
+          Hier kann das Avatar der Benutzerprofils hinzugefügt, bearbeitet oder gelöscht werden.\
+          Maßstab 1:1
+        - **<u>Erlaubte Beitritte? (Wird zu "Beitritt ohne Anfrage erlaubt?")</u>**\
+          Über die Schaltfläche <u>"Beitritt ohne Anfrage erlaubt?"</u> kann ein Team einstellen, ob Interessenten für das Team dem Team direkt beitreten können oder ob diese zuerst eine Anfrage an das Team stellen müssen.\
+          \
+          Hierbei steht das <Icon icon="circle-xmark" /> für "Nein" und das <Icon icon="circle-check" /> für "Ja"\
+          \
+          Ist das <Icon icon="circle-xmark" /> für "Nein" ausgewählt, können Interessenten dem Team nicht beitreten, ohne vorher eine Anfrage an das Team gestellt zu haben.\
+          Das Team muss die Anfrage zuerst annehmen.\
+          \
+          Ist das <Icon icon="circle-check" /> für "Ja" ausgewählt, können Interessenten dem Team, ohne vorherige Anfrage, beitreten.\
+          \
+          Nach der Eingabe des neuen Namen mit Klicken auf die Schaltfläche "Speichern" bestätigen. (Im Bild gelb hervorgehoben)
+      </Tab>
+      <Tab title="Mitglieder">
+        
+      </Tab>
+    </Tabs>
+  </Tab>
+</Tabs>
