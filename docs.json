@@ -46,6 +46,17 @@
               "nxtcore-WL2.2turnierseite"
 
             ]
+          },
+          {
+            "group": "Adminoberfläche",
+            "pages": [
+              "nxtcore-WL3.1dashboard",
+              "nxtcore-WL3.2accounts",
+              "nxtcore-WL3.3admin",
+              "nxtcore-WL3.4mails",
+              "nxtcore-WL3.5turnier"
+
+            ]
           }
         ]
       },
