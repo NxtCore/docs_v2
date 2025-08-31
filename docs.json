@@ -28,17 +28,23 @@
             "group": "Übersicht",
             "pages": [
               "nxtcore-WLinhaltsverzeichnis"
-              
+
             ]
           },
           {
             "group": "Benutzeroberfläche",
             "pages": [
               "nxtcore-WL1.1registrieren",
-              "nxtcore-WL1.2login",
-              "nxtcore-WLfrontpage",
-              "nxtcore-WLadmin"
-              
+              "nxtcore-WL1.2login"
+
+            ]
+          },
+          {
+            "group": "Frontpage / Turnierseite",
+            "pages": [
+              "nxtcore-WL2.1navigationturnierseite",
+              "nxtcore-WL2.2turnierseite"
+
             ]
           }
         ]
@@ -50,6 +56,7 @@
             "group": "API Documentation",
             "pages": [
               "api-reference/introduction"
+              
             ]
           },
           {
