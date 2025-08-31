@@ -35,6 +35,7 @@
             "group": "Benutzeroberfläche",
             "pages": [
               "nxtcore-WL1.1registrieren",
+              "nxtcore-WL1.2login",
               "nxtcore-WLfrontpage",
               "nxtcore-WLadmin"
               
