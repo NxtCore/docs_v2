@@ -1,21 +1,63 @@
 ---
 title: "Connections"
 description: "Beschreibung aller Funktionen in diesem Menü."
+icon: "chevrons-left-right-ellipsis"
 ---
 
-<Card title="Connections" icon="code-simple" iconType="regular" horizontal>
-  
+<Card title="Connections" icon="chevrons-left-right-ellipsis" iconType="regular" horizontal>
+  Lege hier Verknüpfungen an, mit welchen User sich verlinken können oder ihr Social Media Profil angeben können
 </Card>
 
-\
-Über das Menü "Connections" können Verknüpfungen angelegt werden.\
-User können Ihre Accounts dann entsprechend mit Ihrem Account auf [die-werksliga.de](http://die-werksliga.de) verlinken.\
-\
-Das Anlegen dieser Verbindungen ist aktuell (aus Sicherheitsgründen) nur dem Developer-Team von nxtcore möglich.
+NxtCore bietet die Möglichkeit, sowohl sogenannte <Tooltip tip="">OAuth2</Tooltip>, als auch normale Verlinkungen mit Linkangabe anzubieten.
 
-![Connectionsoverview Pn](/images/connectionsoverview.png)
+<Info>
+  NxtCore bietet aktuell folgende OAuth2 Verbindungen auf Anfrage kostenlos an
 
-Für die User sieht diese Übersicht der "Verbindungen" in Ihrem Profil unter \
--\> Profil -\> Verbindungen wie folgt aus:
+  - Riot Games
+  - Discord
+  - Epic Games
+  - Steam
 
-![Connectionsfrontpage Pn](/images/connectionsfrontpage.png)
+  **Folgt in Kürze:**
+
+  - Google
+</Info>
+
+<Note>
+  Weitere OAuth2 Anbieter werden auf Nachfrage gerne hinzugefügt. Kosten bezahlungspflichtiger OAuth2 Anbieter wie Apple werden nur nach Absprache kostenfrei angeboten, andererseits gilt das <Tooltip tip="">BYOK </Tooltip>Prinzip
+</Note>
+
+<Tabs>
+  <Tab title="Übersicht" icon="image">
+    <Frame>
+      ![Image](/images/image-8.png)
+    </Frame>
+    <Card title="Übersicht" icon="chevrons-left-right-ellipsis" horizontal>
+      Hier findest du Jumper zum Bearbeiten, Hinzufügen, Löschen und Suchen von Avatar Dekorationen
+    </Card>
+    <Card title="Bearbeiten" icon="pencil-ruler" horizontal>
+      Über diesen Button gelangst du zur Bearbeitungsansicht. Dies ist aus technischen Gründen nur bei nicht-OAuth2 fähigen verbindungen möglich. Bei gewünschten Änderungen meldet euch gerne beim Entwicklungsteam
+    </Card>
+    <Card title="Löschen" icon="trash" color="#ff0000" horizontal>
+      Über diesen Button kannst du die ausgewählte Dekoration löschen. Dies ist aus technischen Gründen nur bei nicht-OAuth2 fähigen verbindungen möglich. Bei gewünschten Änderungen meldet euch gerne beim Entwicklungsteam
+    </Card>
+    <Card title="Erstellen" icon="circle-plus" color="#008000" horizontal>
+      Über diesen Button kannst du eine neue nicht-OAuth2 fähige Verbindungen erstellen
+    </Card>
+  </Tab>
+  <Tab title="Erstellen" icon="circle-plus">
+    <Frame>
+      WIP
+    </Frame>
+  </Tab>
+  <Tab title="Bearbeiten" icon="pencil-ruler">
+    <Frame>
+      WIP
+    </Frame>
+  </Tab>
+  <Tab title="Beispiel">
+    <Frame caption="Bildausschnitt von turnier.die-werksliga.de">
+      ![Image](/images/image-9.png)
+    </Frame>
+  </Tab>
+</Tabs>

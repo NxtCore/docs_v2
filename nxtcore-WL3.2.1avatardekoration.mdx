@@ -1,28 +1,55 @@
 ---
 title: "Avatar Dekorationen"
-description: "Beschreibung aller Funktionen in diesem Menü."
+description: "Beschreibung aller Funktionen der Avatar Dekoration"
+icon: "image"
 ---
 
 In diesem Menü können Avatardekorationen angelegt werden.
 
 <Warning>
-  Diese Funktion ist Standardmäßig nicht für jede Instanz freigeschaltet und wird nur auf Anfrage entwickelt & freigeschaltetg
+  Diese Funktion ist Standardmäßig nicht für jede Instanz freigeschaltet und wird nur auf Anfrage entwickelt & freigeschaltet
 </Warning>
 
 <Tabs>
-  <Tab title="Übersicht">
-    <img
-      src="/images/image-1.png"
-      alt="Image"
-      title="Image"
-      className="mr-auto"
-      style={{ width:"100%" }}
-    />
+  <Tab title="Übersicht" icon="image">
+    <Frame>
+      <img
+        src="/images/avatar-decoration-overview.png"
+        alt="Image 1"
+        title="Avatar Decoration"
+        style={{ width:"100%" }}
+      />
+    </Frame>
+    <Card title="Übersicht" icon="image" horizontal>
+      Hier findest du Jumper zum Bearbeiten, Hinzufügen, Löschen und Suchen von Avatar Dekorationen
+    </Card>
+    <Card title="Bearbeiten" icon="pencil-ruler" horizontal>
+      Über diesen Button gelangst du zur Bearbeitungsansicht
+    </Card>
+    <Card title="Löschen" icon="trash" color="#ff0000" horizontal>
+      Über diesen Button kannst du die ausgewählte Dekoration löschen.
+    </Card>
+    <Card title="Erstellen" icon="circle-plus" color="#008000" horizontal>
+      Über diesen Button kannst du eine neue Dekoration Erstellen
+    </Card>
   </Tab>
-  <Tab title="Erstellen">
-    
+  <Tab title="Erstellen" icon="circle-plus">
+    <Frame caption="Gebe hier sowohl einen Namen + entsprechendes Icon an">
+      <img
+        src="/images/avatar-decoration-create.png"
+        alt="Avatar Decoration Create"
+        style={{ width:"100%" }}
+      />
+    </Frame>
   </Tab>
-  <Tab title="Bearbeiten">
-    
+  <Tab title="Bearbeiten" icon="pencil-ruler">
+    <Frame caption="Hier kann der Namen + entsprechendes Icon angepasst und ggf, neu hochgeladen werden. Speichern nicht vergessen!.">
+      ![Image](/images/avatar-decoration-edit.png)
+    </Frame>
+  </Tab>
+  <Tab title="Beispiel">
+    <Frame caption="Bildausschnitt der Werksliga">
+      ![Image](/images/avatar-decoration-example.png)
+    </Frame>
   </Tab>
 </Tabs>

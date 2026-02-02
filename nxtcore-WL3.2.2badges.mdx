@@ -1,38 +1,62 @@
 ---
 title: "Badges"
-description: "Beschreibung aller Funktionen in diesem Menü"
+description: "Beschreibung aller Funktionen der Badges"
+icon: "award"
 ---
 
-<Card title="Genereller Erklärung der Badges." icon="award-simple" horizontal>
+<Card title="Genereller Erklärung der Badges." icon="award" horizontal>
   Hier wird erklärt, was Badges sind und wie diese im Profil aussehen.
 </Card>
 
-\
-Über das Menü "Badges" können Icons oder Bilder hochgeladen werden, welche, nachdem Sie einem User zugewiesen wurden, in dem jeweiligen User-Profil zu sehen sind.\
-\
-Beispiel: Baum auf blauem Hintergrund\
-<sup>(grüner Pfeil markiert das Beispiel)</sup>\
-\
-<Icon icon="circle-info" size={20} /> **Der blaue Hintergrund ist vorhanden, da der Baum selbst keinen eigenen Hintergrund hat.**
-
-<img
-  src="/images/badgesbeispiel.png"
-  alt="Badgesbeispiel Pn"
-  style={{ width:"100%" }}
-/>
-
-  
-
-<Card title="Neues Badge erstellen" icon="award-simple" horizontal>
-  Hier eine Anleitung zum erstellen von neuen Badges.
-</Card>
-
-### **Erklärung, wie ein Badge erstellt wird.**
-
-1. Durch das Klicken auf die Schaltfläche "  Erstellen" kann ein neues Badge erstellt werden.
-
-   ![image.png](/images/image.png)
-2. Eingabe eines Namen für das Badge
-3. Weiter mit Klicken auf die Schaltfläche "Erstellen"
-
-![Badgename Pn](/images/badgename.png)
+<Tabs>
+  <Tab title="Übersicht" icon="image">
+    <Frame>
+      ![Image](/images/image-7.png)
+    </Frame>
+    <Card title="Übersicht" icon="award" horizontal>
+      Hier findest du Jumper zum Bearbeiten, Hinzufügen, Löschen und Suchen von Badges
+    </Card>
+    <Card title="Bearbeiten" icon="pencil-ruler" horizontal>
+      Über diesen Button gelangst du zur Bearbeitungsansicht
+    </Card>
+    <Card title="Löschen" icon="trash" color="#ff0000" horizontal>
+      Über diesen Button kannst du die ausgewählte Dekoration löschen.
+    </Card>
+    <Card title="Erstellen" icon="circle-plus" color="#008000" horizontal>
+      Über diesen Button kannst du eine neue Dekoration Erstellen
+    </Card>
+  </Tab>
+  <Tab title="Erstellen" icon="circle-plus">
+    <Frame caption="Gebe hier zuerst einen Namen des Badges an. Ein Bild kann später über die Bearbeitungsseite hochgeladen werden">
+      ![Image](/images/image-6.png)
+    </Frame>
+  </Tab>
+  <Tab title="Bearbeiten" icon="pencil-ruler">
+    <Tabs>
+      <Tab title="Allgemein">
+        <Frame>
+          ![Image](/images/image-3.png)
+        </Frame>
+        - **Name**
+          - Text welcher beim Hover über dem Badge angezeigt werden soll
+        - **Icon**
+          - Bild Datei, welches verwendet werden soll
+      </Tab>
+      <Tab title="User">
+        <Frame caption="Liste aller User welchen dieses Badge zugewiesen ist">
+          ![Image](/images/image-4.png)
+        </Frame>
+      </Tab>
+      <Tab title="Teams">
+        <Frame caption="Liste aller Teams welchen dieses Badge zugewiesen ist">
+          ![Image](/images/image-5.png)
+        </Frame>
+      </Tab>
+    </Tabs>
+  </Tab>
+  <Tab title="Beispiel">
+    <Frame caption="Bildausschnitt von projectdach.de">
+      ![Image](/images/image-2.png)
+    </Frame>
+  </Tab>
+</Tabs>
