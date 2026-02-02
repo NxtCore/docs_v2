@@ -8,6 +8,9 @@
     "dark": "#D4C842"
   },
   "favicon": "/logo.png",
+  "icons": {
+    "library": "lucide"
+  },
   "navigation": {
     "tabs": [
       {
@@ -28,7 +31,6 @@
             "group": "Übersicht",
             "pages": [
               "nxtcore-WLinhaltsverzeichnis"
-
             ]
           },
           {
@@ -36,7 +38,6 @@
             "pages": [
               "nxtcore-WL1.1registrieren",
               "nxtcore-WL1.2login"
-
             ]
           },
           {
@@ -44,14 +45,11 @@
             "pages": [
               "nxtcore-WL2.1navigationturnierseite",
               "nxtcore-WL2.2turnierseite"
-
             ]
           },
           {
             "group": "Adminoberfläche",
             "pages": [
-              "nxtcore-WL3.1dashboard",
-              "nxtcore-WL3.2accounts",
               {
                 "group": "Accounts",
                 "pages": [
@@ -63,11 +61,7 @@
                   "nxtcore-WL3.2.6userconnectionbans",
                   "nxtcore-WL3.2.7userconnections"
                 ]
-              },
-              "nxtcore-WL3.3admin",
-              "nxtcore-WL3.4mails",
-              "nxtcore-WL3.5turnier"
-
+              }
             ]
           }
         ]
@@ -79,7 +73,6 @@
             "group": "API Documentation",
             "pages": [
               "api-reference/introduction"
-              
             ]
           },
           {
